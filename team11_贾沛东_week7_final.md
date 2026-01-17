@@ -95,7 +95,7 @@ mainboard -d modules/localization/dag/dag_streaming_rtk_localization.dag
 ![po](./imges/po.jpg)
 ### NDT算法定位
 **1.使用脚本修复pose数据**
-将corrected_poses.txt中的zone坐标使用python脚本修改为49
+将corrected_poses.txt中的zone坐标使用python脚本修改为49，并将文件中的负数数据校正
 ```python
 import os
 import sys
@@ -149,6 +149,8 @@ process_file(file_path)
 if __name__ == "__main__":
 main()
 ```
+![xiu](./imges/xiu.jpg)
+
 **2.运行代码生图**
 在容器内运行，生成ndtmap
 ```bash
