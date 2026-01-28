@@ -166,7 +166,7 @@ lidar
 bash supplement/msf_map_creator.sh \
 data/bag/localization \
 /apollo/modules/calibration/data/dev_kit pix hooke/lidar_params/lidar_novatel_extrinsics.yaml \
-51 \
+49 \
 /apollo/modules/map/data/map_test \
 lidar
 ```
